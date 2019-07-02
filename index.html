@@ -7,8 +7,25 @@
     <title>Minha Página</title>
     <script type="text/javascript" src="main.js"></script>
 </head>
-    <body>
+    <body onload="load()">
         <!--script> alert("minha página js")</script-->
         <h1>Minha Página de Recap de JS Vanilla do Básico ao Avançado ES5 e ES6</h1>
+
+        <!-- Button Section-->
+        <p id="button"></p>
+
+        <button type="button" onclick="clicked()">Click Here</button>
+        <p id="thanks" onclick="redirect()"></p>
+        <!--p id="mouseover" onmouseover="change()" onmouseout="comeback()">Pass the mouse over here!</p-->
+        <p onmouseover="change(this)" onmouseout="comeback()">Pass the mouse over here!</p>
+        <p onmouseover="change(this)" onmouseout="comeback()">Pass the mouse over here!</p>
+        <p onmouseover="change(this)" onmouseout="comeback()">Pass the mouse over here!</p>
+
+        <select onchange="functionChange(this)">
+            <option value="1">Value 1</option>
+            <option value="2">Value 2</option>
+            <option value="3">Value 3</option>
+        </select>
+
     </body>
 </html>
